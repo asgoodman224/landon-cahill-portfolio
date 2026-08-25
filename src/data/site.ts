@@ -80,6 +80,11 @@ export type Project = {
   /** Image path in /public/work/. Leave empty for the typographic panel. */
   image?: string;
   imageAlt?: string;
+  /**
+   * How the image fills its frame. 'cover' (the default) crops a photo to fit.
+   * 'contain' centres a logo or mark at its own size without cropping it.
+   */
+  imageFit?: 'cover' | 'contain';
   /** Extra pieces shown inside the case study, under The Execution. */
   gallery?: { src: string; alt: string; caption: string }[];
   /** Documents behind the work. Rendered as buttons at the foot of the case study. */
@@ -98,8 +103,9 @@ export const projects: Project[] = [
     blurb:
       'A social rebrand and campaign for a heritage beer brand losing its grip on a younger audience.',
     skills: ['Brand Positioning', 'Social Strategy', 'Content Calendar', 'Competitive Analysis'],
-    image: '',
-    imageAlt: 'Samuel Adams rebrand campaign board',
+    image: '/work/samuel-adams-logo.png',
+    imageAlt: 'The Samuel Adams logo',
+    imageFit: 'contain',
     links: [
       {
         href: 'https://docs.google.com/document/d/1sOhGFSXUGRMYTnLzCxexWBpTiZw5Sb3nC5Z5wktA2bk/edit',

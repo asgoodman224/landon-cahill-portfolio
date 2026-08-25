@@ -47,7 +47,9 @@ export default function SelectedWork() {
         {/* ---- Featured project: full-bleed composition, not a card ---- */}
         <Reveal className="work__feature">
           <button
-            className="work__feature-media"
+            className={`work__feature-media ${
+              featured.imageFit === 'contain' ? 'work__feature-media--mark' : ''
+            }`}
             onClick={() => setOpenId(featured.id)}
             aria-label={`Open case study: ${featured.title}`}
             data-cursor="hot"
@@ -120,7 +122,12 @@ export default function SelectedWork() {
       </div>
 
       {/* Floating hover preview (desktop, fine pointers only) */}
-      <div className="peek" ref={peekRef} data-visible={Boolean(peek)} aria-hidden="true">
+      <div
+        className={`peek ${peek?.imageFit === 'contain' ? 'peek--mark' : ''}`}
+        ref={peekRef}
+        data-visible={Boolean(peek)}
+        aria-hidden="true"
+      >
         {peek &&
           (peek.image ? (
             <img src={peek.image} alt="" />

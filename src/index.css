@@ -1969,6 +1969,32 @@ section {
   cursor: pointer;
 }
 
+/* A logo is not a photograph: centre it whole rather than cropping it to
+   fill, and cap its width so a small source file is never upscaled into
+   a blurry mess. Raise the cap if a higher-resolution file replaces it. */
+.work__feature-media--mark {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: clamp(1.5rem, 5vw, 3rem);
+  /* Brand marks usually arrive with a white background baked in rather than a
+     real alpha channel, which leaves a pale box floating on the cream page.
+     Matching the frame to that background turns it into a deliberate plate.
+     A genuinely transparent logo can drop this and use var(--paper-2). */
+  background: #f7f7f7;
+}
+.work__feature-media--mark img {
+  width: auto;
+  height: auto;
+  max-width: min(100%, 240px);
+  max-height: 100%;
+  object-fit: contain;
+}
+.peek--mark img {
+  object-fit: contain;
+  padding: 1.25rem;
+}
+
 /* Disabled submit button should look disabled. */
 .btn:disabled {
   opacity: 0.55;
