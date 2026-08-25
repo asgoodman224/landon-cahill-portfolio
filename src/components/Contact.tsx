@@ -29,6 +29,14 @@ export default function Contact() {
         <Reveal className="contact__outro" delay={200}>
           <dl className="contact__details contact__details--row">
             <div className="contact__detail">
+              <dt className="meta">Email</dt>
+              <dd>
+                <a className="ul" href={`mailto:${contact.email}`}>
+                  {contact.email}
+                </a>
+              </dd>
+            </div>
+            <div className="contact__detail">
               <dt className="meta">LinkedIn</dt>
               <dd>
                 <a className="ul" href={contact.linkedin} target="_blank" rel="noreferrer">

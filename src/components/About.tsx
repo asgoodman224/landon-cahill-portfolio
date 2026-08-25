@@ -66,17 +66,6 @@ export default function About() {
                 <p key={i}>{p}</p>
               ))}
             </Reveal>
-
-            <Reveal delay={180}>
-              <dl className="about__facts">
-                {about.offTheClock.map((fact) => (
-                  <div key={fact.label}>
-                    <dt className="meta">{fact.label}</dt>
-                    <dd>{fact.value}</dd>
-                  </div>
-                ))}
-              </dl>
-            </Reveal>
           </div>
         </div>
       </div>

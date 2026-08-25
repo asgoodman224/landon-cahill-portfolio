@@ -42,11 +42,7 @@ export const identity = {
  * 2. CONTACT  (verified — Landon's resume + LinkedIn)
  * ------------------------------------------------------------------------ */
 export const contact = {
-  /**
-   * Email and phone are kept here for reference but are NOT rendered on the
-   * site — the contact section routes people through LinkedIn instead.
-   * To show them again, add them back in src/components/Contact.tsx.
-   */
+  /** Shown in the contact section. Phone is kept for reference only. */
   email: 'landoncahill@gmail.com',
   phone: '(203) 430-1554',
   phoneHref: 'tel:+12034301554',
@@ -270,7 +266,7 @@ export const projects: Project[] = [
     links: [
       {
         href: 'https://docs.google.com/document/d/1zZ945u571QeGEuQYPAgdqMOk9jqIyOuDzbdcn1TpFXI/edit',
-        label: 'Read the poem',
+        label: 'Read my work',
       },
     ],
     caseStudy: {
@@ -328,14 +324,6 @@ export const about = {
       alt: 'Landon Cahill outdoors by the water',
       caption: '', // e.g. '[CITY], [YEAR]'
     },
-  ],
-
-  /** [PLACEHOLDER] Swap these for things that are actually true of you. */
-  offTheClock: [
-    { label: 'Currently writing', value: 'A second novel' },
-    { label: 'Also shoots', value: 'Short films' },
-    { label: 'Lives inside', value: 'Adobe Creative Suite' },
-    { label: 'Four summers as', value: 'A lifeguard, then head guard' },
   ],
 } as const;
 
