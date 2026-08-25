@@ -1,0 +1,11 @@
+# Netlify build config. Vercel auto-detects Vite and ignores this file.
+#
+# NODE_VERSION is pinned because Vite 8 requires ^20.19 || >=22.12 — without it
+# a host defaulting to an older Node fails the build with an unhelpful error.
+
+[build]
+  command = "npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "22"
