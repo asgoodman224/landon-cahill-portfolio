@@ -167,8 +167,9 @@ export const projects: Project[] = [
     blurb:
       'Building the volunteer network and business partnerships behind a week-long fundraising push for St. Jude.',
     skills: ['Partnership Development', 'Networking', 'Campaign Planning', 'Client Relationships'],
-    image: '',
-    imageAlt: 'Philanthropy campaign work',
+    image: '/work/st-jude-logo.png',
+    imageAlt: "The St. Jude Children's Research Hospital logo",
+    imageFit: 'contain',
     caseStudy: {
       challenge:
         'Fundraising weeks live or die on infrastructure built before they start. Volunteers, partners and funding streams all have to exist in advance.',
