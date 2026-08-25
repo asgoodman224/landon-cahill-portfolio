@@ -13,6 +13,9 @@
   --ink-3: #232419;
   --paper: #f3f0e8;
   --paper-2: #e9e5d9;
+  /* Backing for brand marks that ship with a white background baked in
+     rather than real transparency. Matches those assets exactly. */
+  --mark-plate: #f7f7f7;
 
   /* Accent — aged gold, taken from Landon's own monogram */
   --signal: #e3b23c;
@@ -1977,11 +1980,7 @@ section {
   align-items: center;
   justify-content: center;
   padding: clamp(1.5rem, 5vw, 3rem);
-  /* Brand marks usually arrive with a white background baked in rather than a
-     real alpha channel, which leaves a pale box floating on the cream page.
-     Matching the frame to that background turns it into a deliberate plate.
-     A genuinely transparent logo can drop this and use var(--paper-2). */
-  background: #f7f7f7;
+  background: var(--mark-plate);
 }
 .work__feature-media--mark img {
   width: auto;
@@ -1989,6 +1988,9 @@ section {
   max-width: min(100%, 240px);
   max-height: 100%;
   object-fit: contain;
+}
+.peek--mark {
+  background: var(--mark-plate);
 }
 .peek--mark img {
   object-fit: contain;

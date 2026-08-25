@@ -142,8 +142,9 @@ export const projects: Project[] = [
     blurb:
       'Owning branding and external communications for a campus organisation across social and physical channels.',
     skills: ['Social Media Management', 'Brand Messaging', 'Campaign Planning', 'Design'],
-    image: '',
-    imageAlt: 'Chapter social media campaign work',
+    image: '/work/tke-logo.png',
+    imageAlt: 'The Tau Kappa Epsilon crest',
+    imageFit: 'contain',
     caseStudy: {
       challenge:
         'Chapter communications were inconsistent. Every event looked like it came from a different organisation, and attendance depended on who happened to catch which post.',
