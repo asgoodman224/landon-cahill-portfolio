@@ -269,8 +269,8 @@ export const projects: Project[] = [
     blurb:
       'Two campus-wide writing wins, and the argument that marketing is storytelling with a business objective attached.',
     skills: ['Copywriting', 'Narrative Structure', 'Editing', 'Creative Direction'],
-    image: '',
-    imageAlt: 'Creative writing work',
+    image: '/work/fountain-pen.png',
+    imageAlt: 'A fountain pen writing in cursive on lined paper',
     links: [
       {
         href: 'https://docs.google.com/document/d/1zZ945u571QeGEuQYPAgdqMOk9jqIyOuDzbdcn1TpFXI/edit',
